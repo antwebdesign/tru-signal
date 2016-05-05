@@ -1,0 +1,289 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,300italic,400italic,100italic);
+
+/* body is the first section put in css folder to style whole page (have to import above font from google first) */
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	/* line height is relative to the font-size */
+	line-height: 1.4;
+	text-align: left;
+	color: #fff;
+	background-color: #ffffff;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	/* position fixed will cause the tag to lose the default of width 100% - add width back */
+	width: 100%;
+	/*when fixed to the top without a b/g color we see through to section below - add own white b/g for the header*/
+	background-color: #D1130B;
+	/* specify the layers or z axis - create own scale with z-index /* 
+	/* steps of 10 make it easier to position other tags in between at a later point if needed */
+	z-index: 10;
+	box-shadow: 0 0 7px rgba(0,0,0,0.6);
+}
+
+
+h1 {
+float: left;
+line-height: 75px; 
+/* margin: 0 0 0 200px; */}
+
+h1 img 
+/* works with line height to specify where something sits on the line – top right bottom left */
+{vertical-align: middle;
+}
+
+
+nav {
+float: right;
+line-height: 75px;
+padding: 0 20px 0 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	/* display inline - sits next to each other */
+	/* display block - stack ontop of each other */
+	/* display block inline-block */
+	display: inline-block;
+	padding: 0 15px 0 15px;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #D1130B;
+}
+
+/* !!!Use .???? to style classes from HTML */
+
+.box {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	
+}
+/* THIS IS REALLY IMPORTANT IN ORDER TO GET BG IMAGE SET UP IN CORRECT FORMAT (URL(../images...)) */
+.intro {
+	background: url(../images/sky_01.jpg);
+	background-size: cover;
+	height: 570px;
+	overflow: hidden; /*This will hide anything that falls out or doesn't fit in */
+	/* correct spacing now we have a fixed header - add margin top */
+	margin: 75px 0 0 0;
+}
+.iphone {
+    float: left;
+    max-width: 50%;
+    margin: 0 0 0 -45px;
+}
+.lead {
+	float:right;
+	padding: 40px 0 0 0;
+	line-height: 7;
+}
+p {
+	font-size: 18px;
+	padding: 10px 20px;
+
+}
+h2 {
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 1.1;
+	padding: 20px;
+	color:#D1130B;
+}
+
+h3 { 
+	font-size: 35px;
+	margin: 30px 0 5px 0;
+	color:#333;
+	}
+h4 {
+	font-weight: 300;
+	font-size: 24px; 
+	color: #D1130B;
+	padding: 0 10px;
+}
+*/
+.row {
+	color:#D1130B;
+	background-color:#fff;
+}
+
+.lead img {
+	padding: 20px;
+}
+
+/* just the p tag within the group (<div>) with a class of lead */
+
+.lead p{
+	margin: 10px;
+	float: below;
+	line-height: 1.6;
+	color:#333;
+}
+.columns {
+		text-align: center;
+		margin: 100px 0 70px 0;
+}
+
+.tile {
+	color: #fff;
+	background-color: #D1130B;
+	padding:20px 20px 65px 20px;
+	margin: 0 15px 0 15px;
+	border :1px solid #e1e1e1;
+	border-radius: 5px;
+	font-style: italic;
+}
+
+blockquote {
+	font-size: 16px;
+	margin: 0 0 10px 0;
+	font-weight: 300;
+}
+.container{
+	padding: 0px 0 10px 0;
+	vertical-align: center;
+
+}
+.text{
+	color: #666;
+	padding:40px 20px 0 20px;
+	font-size: 12px;
+}
+.quotes {
+	background-color: #fff;
+	padding: 20px 0 40px 0;
+}
+.blog {
+	background-color: #fff;
+	padding: 20px 0 40px 0;
+}
+
+.contact{
+	background:url(../images/grey_map.png) center;
+	background-size: cover;
+	text-align: center;
+	padding: 70px 0 70px 0;
+	background-color:#D1130B;
+}
+form {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	
+}
+input, textarea {
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 0 10px 0;
+}
+textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+/* attribute selector - selected based on any attribute = to something e.g type="submit" type="email" */
+
+input[type="submit"] {
+	background-color: #000000;
+	color: #ffffff;
+	width: 80px;
+	float: right;
+}
+
+.contact a {
+		color: #333333;
+}
+
+.footer {
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+footer a {
+	text-decoration: none;
+	margin: 0 5px 0 5px; 
+}
+
+small {
+	display: block;
+	text-align: center;
+	background-color:#D1130B;
+}
+	@media screen and (max-width: 940px){
+	.iphone {
+		/* stack ontop */
+		float: none;
+	max-width: 80%;
+	margin: 0 0 40px 30px;
+	display:block;
+	}
+	h2{position: block;
+		float:center;
+	}
+	/*
+
+	.intro{
+	}
+
+	*/
+
+@media screen and (max-width: 720px){
+	/* reset fixed header8*/
+	header {
+	box-shadow: none;
+	/* position static is the default position type of alltags. Tags sit in the correct order they appear in the html */
+	position: static;
+	text-align: center
+	}
+	nav a {
+		/* stack ontop */
+		display: block;
+	}
+	.iphone{
+		margin:margin: 0 0 100px 40px;;
+	}
+
+	
+/*
+	@media screen and (min-width: 720px){
+	.iphone {
+    float: left;
+    max-width: 600px;
+    margin: -320px 0px 0 -67px;
+}
+*/
+
+
+
+
+
+	/* remove floats from everything on mobileSEEMSBROKEN*/
+
+	h1, nav, .iphone, .lead {
+		float: none;
+	}	
+
+	.intro {
+		margin: 0;
+		/* reverse the fixed height we created earlier */
+		height:auto;
+		text-align: center;
+		color: #ffffff;
+	}
+	.columns {
+		margin: 100px 0 20px 0;
+	}
+	form {
+		max-width: 80%;
+	}
+}
+

@@ -1,0 +1,249 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+
+/* body is the first section put in css folder to style whole page (have to import above font from google first) */
+body {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	/* line height is relative to the font-size */
+	line-height: 1.4;
+	text-align: left;
+	color: #777777;
+	background-color: #ffffff;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	/* position fixed will cause the tag to lose the default of width 100% - add width back */
+	width: 100%;
+	/*when fixed to the top without a b/g color we see through to section below - add own white b/g for the header*/
+	background-color: #ED1818;
+	/* specify the layers or z axis - create own scale with z-index /* 
+	/* steps of 10 make it easier to position other tags in between at a later point if needed */
+	z-index: 10;
+	box-shadow: 0 0 7px rgba(0,0,0,0.6);
+}
+
+
+h1 {
+float: left;
+line-height: 75px; 
+/* margin: 0 0 0 200px; */}
+
+h1 img 
+/* works with line height to specify where something sits on the line – top right bottom left */
+{vertical-align: middle;
+}
+
+
+nav {
+float: right;
+line-height: 50px;
+padding: 0 20px 0 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	/* display inline - sits next to each other */
+	/* display block - stack ontop of each other */
+	/* display block inline-block */
+	display: inline-block;
+	padding: 0 15px 0 15px;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #ED1818;
+}
+
+
+/* !!!Use .???? to style classes from HTML */
+
+.logo{
+	max-width:350px;
+	float:left;
+}
+
+.box {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	color: #fff;
+	float:left;
+	
+}
+.button{
+background:    #c00;
+background:    -webkit-linear-gradient(#c00, #600);
+background:    linear-gradient(#c00, #600);
+border:        1px solid #e06666;
+border-radius: 5px;
+box-shadow:    0 1px 0 0 #444;
+color:         #fff;
+display:       inline-block;
+padding:       8px 20px;
+font:          normal 700 23px/1 "Open Sans", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px 0 #000;
+}
+/* THIS IS REALLY IMPORTANT IN ORDER TO GET BG IMAGE SET UP IN CORRECT FORMAT (URL(../images...)) */
+.intro {
+	background: url(../images/sky_01.jpg);
+	background-size: cover;
+	height: 570px;
+	overflow: hidden; /*This will hide anything that falls out or doesn't fit in */
+	/* correct spacing now we have a fixed header - add margin top */
+	margin: 156px 0 0 0;
+}
+.satellite {
+	float: left;
+	max-width:500px;
+	margin: 70px 0 0px 40px;
+}
+.lead {
+	float:right;
+	padding: 10px 0 0 0;
+	line-height: 7;
+}
+h2 {
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 1.1;
+	padding: 20px;
+	color:#333;
+}
+p {
+	font-size: 22px;
+	padding: 20px;
+
+}
+
+.lead img {
+	padding: 20px;
+}
+
+/* just the p tag within the group (<div>) with a class of lead */
+
+.lead p{
+	margin: 10px;
+	float: below;
+	line-height: 1;
+	color: #333;
+}
+.columns {
+		text-align: center;
+		margin: 70px 0 70px 0;
+}
+h3 { 
+	font-size: 35px;
+	margin: 30px 0 5px 0;
+	color: #333;
+	}
+
+.tile {
+	background-color: #ffffff;
+	padding:20px 20px 65px 20px;
+	margin: 0 15px 0 15px;
+	border :1px solid #e1e1e1;
+	border-radius: 5px;
+}
+
+blockquote {
+	font-size: 22px;
+	margin: 0 0 10px 0;
+}
+.container{
+	padding: 140px 0 10px 0;
+	vertical-align: center;
+}
+.quotes {
+	background-color: #f6f6f6;
+	padding: 20px 0 40px 0;
+}
+
+
+.contact{
+	background:url(../images/map.jpg) center;
+	background-size: cover;
+	text-align: center;
+	padding: 70px 0 70px 0;
+}
+form {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	
+}
+input, textarea {
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 0 10px 0;
+}
+textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+/* attribute selector - selected based on any attribute = to something e.g type="submit" type="email" */
+
+input[type="submit"] {
+	background-color: #000000;
+	color: #ffffff;
+	width: 80px;
+	float: right;
+}
+
+.contact a {
+		color: #333333;
+}
+
+.footer {
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+footer a {
+	text-decoration: none;
+	margin: 0 5px 0 5px; 
+}
+
+small {
+	display: block;
+	text-align: center;
+}
+
+@media screen and (max-width: 720px){
+	/* reset fixed header8*/
+	header {
+	box-shadow: none;
+	/* position static is the default position type of alltags. Tags sit in the correct order they appear in the html */
+	position: static;
+	text-align: center
+	}
+	nav a {
+		/* stack ontop */
+		display: block;
+	}
+
+	/* remove floats from everything on mobileSEEMSBROKEN*/
+
+	h1, nav, .iphone, .lead {
+		float: none;
+	}	
+
+	.intro {
+		margin: 0;
+		/* reverse the fixed height we created earlier */
+		height:auto;
+		text-align: center;
+		color: #ffffff;
+	}
+	.columns {
+		margin: 20px 0 20px 0;
+	}
+	form {
+		max-width: 80%;
+	}
+}
+

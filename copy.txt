@@ -1,0 +1,52 @@
+Font -
+Source Sans Pro
+
+Colours - 
+Darker Grey: #444444
+Dark Grey: #777777
+Off Grey: #959597
+Medium Grey(border): #e1e1e1
+Light Grey: #f6f6f6
+
+
+TITLE COPY
+
+Your brew, better.
+
+Get 1000s and 1000s of tea brands delivered direct to your door.
+
+
+ABOUT COPY
+
+Search
+
+Find 1000s of brews and blends.
+
+Share
+
+Share your favourite teas with friends.
+
+Shop
+
+Buy securely and get free delivery.
+
+Sup
+
+Sit back and enjoy a nice cup of tea!
+
+
+
+QUOTES
+
+
+"TeaTime is 100% indispensible - I now use it to order all my tea."
+
+Peter Olson
+
+"After a long day's work, I love to relax. TeaTime is perfect."
+
+Susan Clark
+
+"I love ordering tea with TeaTime, it's the best app out there."
+
+Henry Larson

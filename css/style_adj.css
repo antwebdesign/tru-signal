@@ -1,0 +1,98 @@
+header {
+	background-color:  #FF7163;
+}
+
+h1 {
+float: left;
+/* margin: 0 0 0 200px; */
+font-family: 'Source Sans Pro', arial, sans-serif;
+font-weight: 400;
+}
+h2 {
+
+}
+
+nav {
+float: right;
+margin: 9px 0 0 0; 
+}
+
+.box {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	background-color: #8FAC86;
+}
+.iphone {
+	float:left;
+	max-width: 600px;
+}
+.lead {
+	float:right;
+}
+nav a {
+	text-transform: uppercase; 
+
+	font-style: arial
+
+	/* make bold */
+	font-weight: 400;
+
+	/* font colour */
+	color: #444444;
+
+	/* add space between links */
+	padding: 0 20px 0 20px;
+
+	/* remove underline */
+	text-decoration: none;}
+
+	.nav-trigger {
+		position: absolute;
+		/* This allows the use of TOP, RIGHT, BOTTOM, LEFT fixed values */
+		top: 20px;
+		right: 20px;
+		/* hide something on the page */
+		display: none;
+	}
+
+nav a:hover {
+	text-decoration: underline;
+
+	color: #666666;
+}
+
+/*Extra responsive styles */
+
+	@media screen and (max-width: 720px) {
+		/* anything inside of here only takes affect when the screen size is less than 720px */
+
+		img, iframe {
+			max-width: 100%;
+	}
+	h1 {
+		padding: 100px 20px 100px 20px;
+	}
+	nav a {
+		/* stack: each link one ontop of another */
+		/* inline: works like text - sits next to each other own line */
+		/* block: - stack one ontop of another, won't be centered by text-align (can use margin: 0 auto; instead) */
+
+		display: block;
+	}
+
+	/* show the nav trigger icon on mobile screens */
+
+	.nav-trigger {
+		/* set back to display: block; make the tag visables */
+		display:block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.quote {
+		float; centered: 
+		max-width: 800px;
+	}
+
+
